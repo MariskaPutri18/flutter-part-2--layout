@@ -48,17 +48,14 @@ class MyApp extends StatelessWidget {
     );
 
     Widget textSection = Container(
-  padding: const EdgeInsets.all(32),
-  child: const Text(
-    'Carilah teks di internet yang sesuai '
-    'dengan foto atau tempat wisata yang ingin '
-    'Anda tampilkan. '
-    'Tambahkan nama dan NIM Anda sebagai '
-    'identitas hasil pekerjaan Anda. '
-    'Selamat mengerjakan 🙂.',
-    softWrap: true,
-  ),
-);
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Pantai Tanjung Penyu adalah salah satu di antara pantai pariwisata yang berada di Jalur Lintas Selatan mulai dari Pantai Kondang Merak, Balekambang, Nganteb hingga Sendang Biru dan Sendiki. Pantai Tanjung Penyu Mas menjadi salah satu tempat wisata yang populer di Malang, Jawa Timur.'
+        'Pantai ini mempunyai pasir putih yang begitu lembut dan air biru kehijauan yang jernih. Selain itu, di Pantai Tanjung Penyu Mas juga terdapat pepohonan yang rindang dan membuat suasana disini begitu sejuk dan terasa nyaman serta pemandangan yang seperti di Raja Ampat karena terdiri dari perbukitan yang cantik yang akan jadi Bali kedua.'
+        'Mariska Putri 2341760051 🙂.',
+        softWrap: true,
+      ),
+    );
     return MaterialApp(
       title: 'Flutter layout: Nama dan NIM Anda',
       home: Scaffold(
@@ -67,10 +64,15 @@ class MyApp extends StatelessWidget {
           child: ListView(
             padding: const EdgeInsets.all(8),
             children: <Widget>[
-              Image.asset('images/pantai.png', width: 600, height: 240, fit: BoxFit.cover,),
+              Image.asset(
+                'images/pantai.png',
+                width: 600,
+                height: 240,
+                fit: BoxFit.cover,
+              ),
               titleSection,
               buttonSection,
-              textSection
+              textSection,
             ],
           ),
         ),
