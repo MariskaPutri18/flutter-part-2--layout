@@ -17,12 +17,12 @@ class MyApp extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.only(bottom: 8),
                 child: const Text(
-                  'Wisata Gunung di Batu',
+                  'Pantai Tanjung Penyu',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
               ),
               Text(
-                'Batu, Malang, Indonesia',
+                'Malang, Indonesia',
                 style: TextStyle(color: Colors.grey[500]),
               ),
             ],
@@ -64,10 +64,14 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter layout demo')),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[titleSection, buttonSection, textSection],
+          child: ListView(
+            padding: const EdgeInsets.all(8),
+            children: <Widget>[
+              Image.asset('images/pantai.png', width: 600, height: 240, fit: BoxFit.cover,),
+              titleSection,
+              buttonSection,
+              textSection
+            ],
           ),
         ),
       ),
