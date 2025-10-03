@@ -60,12 +60,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter layout: Nama dan NIM Anda',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter layout demo')),
-        body: Center(
-          child: ListView(
-            padding: const EdgeInsets.all(8),
-            children: <Widget>[
-              Image.asset(
-                'images/pantai.png',
+        body: ListView(
+          padding: const EdgeInsets.all(8),
+          children: <Widget>[
+            Image.asset(
+              'images/pantai.png',
                 width: 600,
                 height: 240,
                 fit: BoxFit.cover,
@@ -76,7 +75,6 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
-      ),
     );
   }
 
